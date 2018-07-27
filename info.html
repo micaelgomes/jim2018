@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-br">
+ 	<head>
+    <title> JIM2018</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--  Fonts and icons  -->
+      <!--     Fonts and icons     -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- Material Kit CSS -->
+    <link href="css/material-kit.css?v=2.0.4" rel="stylesheet" />
+		<!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+	</head>
+  <body>
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
+  	<div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="index.html"> JIM2018</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="progamacao.html" class="nav-link">
+                  <i class="material-icons">view_list</i> Programação
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                  <i class="material-icons">cloud_upload</i> Chamada de Trabalhos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                  <i class="material-icons">info</i> Informações
+              </a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                  <i class="material-icons">note</i> Certificados
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                  <i class="material-icons">library_books</i> Anais
+              </a>
+            </li>
+            -->
+            <li class="nav-item">
+		      <button type="button" class="btn btn-danger btn-round title ajust-position">Inscrição</button>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="header-filter" data-parallax="true" style="background-image: url(); padding: 90px;">
+</div>
+    
+<div class="main main-raised">
+  <div class="container">
+    <div class="section">
+      <!-- Start Map -->
+          <div id="map"></div>
+            <script>
+              // Initialize and add the map
+              function initMap() {
+                // The location of Uluru
+                var uluru = {lat: -25.344, lng: 131.036};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 4, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+              }
+            </script>
+      <!-- Start Content -->
+      <div id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Classic Heading -->
+              <h4 class="classic-title"><span>Informações</span></h4>
+              <!-- Divider -->
+              <div class="hr1" style="margin-bottom:10px;"></div>
+              <!-- Info - Icons List -->
+                <ul class="icons-list">
+                  <li><i class="material-icons">assignment</i> <strong>Endereço:</strong>  Centro Pedagógico Paulo Freire, UFMA Campus do Bacanga, Av. dos Portugueses, 1966, Bacanga - CEP 65080-805.</li>
+                  <!--<li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> inscricao.jim@ufma.br</li>-->
+                  <li><i class="material-icons">call</i> <strong>Coordenação JIM:</strong> (98) 3272-9280</li>
+                  <li><i class="material-icons">call</i> <strong>DEINF:</strong> (98) 3272-8223</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End content -->
+    </div>
+  </div>
+</div>
+
+<footer class="footer footer-default" >
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="">
+              petcomp
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+        &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+    </div>
+  </div>
+</footer>
+	<!--   Core JS Files   -->
+	<script src="js/core/jquery.min.js" type="text/javascript"></script>
+	<script src="js/core/popper.min.js" type="text/javascript"></script>
+	<script src="js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+	<script src="js/plugins/moment.min.js"></script>
+	<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+	<script src="js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+			<script src="js/plugins/nouislider.min.js" type="text/javascript"></script>
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+	<script src="js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+	<script src="js/stand.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx2iQSVJxiGBQQVNrOgYVcj5Zba2ZEIWk&callback=initMap"></script>
+</body>
+</html>
