@@ -20,7 +20,7 @@
     <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
   	<div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="index.html"> JIM2018</a>
+        <a class="navbar-brand img-ajust" href="index.html"><img src="img/JIM18_logo.png"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -30,7 +30,7 @@
         </button>
       </div>
 
-      <div class="collapse navbar-collapse">
+			<div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href="progamacao.html" class="nav-link">
@@ -38,12 +38,12 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="sub_trabalho.html" class="nav-link">
                   <i class="material-icons">cloud_upload</i> Chamada de Trabalhos
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="info.html" class="nav-link">
                   <i class="material-icons">info</i> Informações
               </a>
             </li>
@@ -60,7 +60,7 @@
             </li>
             -->
             <li class="nav-item">
-		      <button type="button" class="btn btn-danger btn-round title ajust-position">Inscrição</button>
+							<a href="inscricao.html"><button type="button" class="btn btn-danger btn-round title ajust-position">Inscrição</button></a>
             </li>
           </ul>
       </div>
@@ -72,31 +72,19 @@
     
 <div class="main main-raised">
   <div class="container">
-    <div class="section">
-      <!-- Start Map -->
-          <div id="map"></div>
-            <script>
-              // Initialize and add the map
-              function initMap() {
-                // The location of Uluru
-                var uluru = {lat: -25.344, lng: 131.036};
-                // The map, centered at Uluru
-                var map = new google.maps.Map(
-                    document.getElementById('map'), {zoom: 4, center: uluru});
-                // The marker, positioned at Uluru
-                var marker = new google.maps.Marker({position: uluru, map: map});
-              }
-            </script>
-      <!-- Start Content -->
+		<div class="section">
+			<h3 class="text-center title">Localização</h3>
+			<br>
+			<div class="middle-center">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.8415573772054!2d-44.311233285802814!3d-2.5583620390567456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68f5cea849ee7%3A0x6b84dc249125578c!2sCCET+-+Centro+de+Ci%C3%AAncias+Exatas+e+Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1532740577350" width="1500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+      <br>
       <div id="content">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <!-- Classic Heading -->
-              <h4 class="classic-title"><span>Informações</span></h4>
-              <!-- Divider -->
+              <h3 class="text-center title">Informação</h3>
               <div class="hr1" style="margin-bottom:10px;"></div>
-              <!-- Info - Icons List -->
                 <ul class="icons-list">
                   <li><i class="material-icons">assignment</i> <strong>Endereço:</strong>  Centro Pedagógico Paulo Freire, UFMA Campus do Bacanga, Av. dos Portugueses, 1966, Bacanga - CEP 65080-805.</li>
                   <!--<li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> inscricao.jim@ufma.br</li>-->
@@ -107,9 +95,8 @@
           </div>
         </div>
       </div>
-      <!-- End content -->
     </div>
-  </div>
+	</div>
 </div>
 
 <footer class="footer footer-default" >
@@ -117,17 +104,17 @@
     <nav class="float-left">
       <ul>
         <li>
-          <a href="">
-              petcomp
-          </a>
+          
         </li>
       </ul>
     </nav>
-    <div class="copyright float-right">
-        &copy;
+    <div class="copyright float-right color-link">
+				<span>Copyright</span>
+				&copy;
         <script>
             document.write(new Date().getFullYear())
         </script>
+				<span><a href="http://pet.ufma.br/comp/">PET de Computação</a></span>
     </div>
   </div>
 </footer>
@@ -145,6 +132,5 @@
 	<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 	<script src="js/material-kit.js?v=2.0.4" type="text/javascript"></script>
 	<script src="js/stand.js" type="text/javascript"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx2iQSVJxiGBQQVNrOgYVcj5Zba2ZEIWk&callback=initMap"></script>
 </body>
 </html>

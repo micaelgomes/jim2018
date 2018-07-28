@@ -34,10 +34,10 @@
 }
 
 .center-box {
-	margin: auto;
-  width: 50%;
-	padding-left: 8% !important;
-  padding: 0px;
+	display: -webkit-flex !important;
+	-webkit-align-items: center !important; 
+	display: flex !important;
+	align-items: center !important;
 }
 
 .ajust-position {
@@ -53,6 +53,25 @@
 }
 
 .img-ajust img{
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.img-resize img{
+	max-width: 230px;
+	max-height: 130px;
+	padding-left: 60px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.color-link a{
+	color: #f44336;
+}
+
+.middle-center {
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
